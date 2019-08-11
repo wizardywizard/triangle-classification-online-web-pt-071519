@@ -21,6 +21,8 @@ class Triangle
   
   def trinagel?
     if !@side_a > 0 && @side_b > 0 && @side_c > 0
+      raise
+      TriangleError
   end
   
   class TriangleError < StandardError
