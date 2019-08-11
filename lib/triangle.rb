@@ -23,7 +23,7 @@ class Triangle
   def trinagel?
     if !@side_a > 0 && @side_b > 0 && @side_c > 0
       raise TriangleError
-    elsif @side_a + @side_b > @side_c || @s
+    elsif @side_a + @side_b > @side_c || @side_b + @side_c > @side_a
   end
   
   class TriangleError < StandardError
